@@ -1,0 +1,70 @@
+.Landing-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+    background-size: cover;
+}
+
+.banner-text h1 {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 15%;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.banner-text p {
+    font-family: 'IM Fell French Canon SC', serif;
+    margin-top: auto;
+    color: white;
+    font-size: 20px;
+    padding: 2em;
+    text-align: center;
+}
+
+.header-style {
+    background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+    height: 30px;
+}
+
+.button {
+    background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+    width: 300px;
+    height: 80px;
+    margin-left: 55px;
+    border-radius: 3rem !important;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #d4deec, #c0d4ee);
+}
+
+.Landing-buttons {
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    margin-top: 40px;
+}
+
+.header-login {
+    background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    border-radius: 2rem !important;
+    margin-left: 350%;
+    cursor: pointer;
+}
+
+.header-login:hover {
+    background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #d4deec, #c0d4ee);
+}
+
+
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'IM Fell French Canon SC', serif;
+font-family: 'Indie Flower', cursive;*/
