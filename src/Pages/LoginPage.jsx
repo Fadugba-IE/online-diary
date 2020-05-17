@@ -1,14 +1,34 @@
-import React, { Component } from 'react'
+import React from 'react';
+import NavbarLogin from '../Components/NavbarLogin';
+import { Container, Row, Col } from 'react-bootstrap';
+import '../App.css';
+import LoginForm from '../Components/LoginForm';
+
+function LoginPage() {
+    return (
+        <div className = 'form-page' >
+                <NavbarLogin />
+
+                <Container fluid>
+                    <Row>
+                        
+                        <Col>
+
+                  <div>
+                <LoginForm />
+                <p> Do not have an account? <a>Sign Up</a></p>
+                  </div>
 
 
- class LoginPage extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Login Page</h1>
-            </div>
-        )
-    }
+
+                        
+                
+                </Col>
+                    </Row>
+                </Container>
+            
+        </div>
+    )
 }
 
-export default LoginPage;
+export default LoginPage

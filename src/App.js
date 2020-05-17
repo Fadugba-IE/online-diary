@@ -1,18 +1,26 @@
 import React from 'react'
 import LandingPage from './Pages/LandingPage';
+import Routes from './Components/Routes';
+
+
+
+
+
 
 
 
 function App() {
     return ( 
 
-        <div>
-       
-            <LandingPage />
-          
-          </div>
+       <div>
+           <Routes />
+       </div>
+           
+     
+        
+        
 
     );
 }
 
-export default App
+export default App;

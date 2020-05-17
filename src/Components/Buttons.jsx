@@ -17,4 +17,4 @@ import history from './history';
     }
 
 
-export default (Buttons);
+export default Buttons;

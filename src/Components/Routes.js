@@ -12,13 +12,19 @@ import history from './history';
 class Routes extends Component {
     render(){
         return(
-          <Router history= {history}>
-            <Switch>
-            <Route exact path="/" component = {LandingPage} />
-            <Route exact path="/Home" component = {LandingPage} />
-            <Route exact path="/login" component = {LoginPage} />
-            <Route exact path="/signup"  component = {SignUpPage} />
-        </Switch>
+          <Router history= {history} >
+
+            
+            
+             <Switch >
+             <Route exact  path="/"  component = {LandingPage} />
+            <Route   path="/login" component = {LoginPage} />
+            <Route   path="/signup"  component = {SignUpPage} />
+            
+
+             </Switch>
+            
+
         </Router>
         );
     }

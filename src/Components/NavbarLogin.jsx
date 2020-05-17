@@ -1,13 +1,13 @@
 import React  from 'react';
-import {Navbar, Button} from 'react-bootstrap';
+import {Navbar} from 'react-bootstrap';
 import '../App.css';
-import history from '../Components/history';
 
- function NavBar() {
+
+ function NavbarLogin() {
     return (
       <div>
 <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#">
+    <Navbar.Brand href="/">
       <img
         alt=""
         src="/logo.svg"
@@ -16,18 +16,24 @@ import history from '../Components/history';
         className="d-inline-block align-top"
       />{' '}
       Online Diary APP 
-      <Button className= 'header-login' variant="primary" onClick = {() => history.push('/login')}>LOG IN</Button> 
+     
     </Navbar.Brand>
   </Navbar>
 </div>
   )  
 }
 
-export default NavBar;
+export default NavbarLogin;
+
+
 
 
  
-     /* <Layout fixedHeader>
+     /* 
+     import history from '../Components/history';
+     <Button className= 'header-login' variant="primary" onClick = {() => history.push('/signup')}>Sign Up</Button> 
+     
+     <Layout fixedHeader>
           <Header className= 'header-style' title= {<span><strong>My Online Diary App</strong></span>}>
 
           
