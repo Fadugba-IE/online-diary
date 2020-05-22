@@ -69,11 +69,11 @@
     .Login-form {
         background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
         width: 100vw;
-        height: 97.8vh;
+        height: 97vh;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-        margin-top: 22%;
+        margin-top: 23%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -102,7 +102,7 @@
         letter-spacing: 5px;
         color: ivory;
         text-align: center;
-        margin-top: 6%;
+        margin-top: 10%;
         margin-bottom: 5%;
     }
     
@@ -157,7 +157,7 @@
         height: 100vh;
         background-size: 100% 100%;
         background-repeat: no repeat;
-        margin-top: 23.7%;
+        margin-top: 23.5%;
         margin-bottom: 0%;
         position: absolute;
         top: 50%;
@@ -247,3 +247,7 @@
     /* font-family: 'Roboto Mono', monospace;
 font-family: 'IM Fell French Canon SC', serif;
 font-family: 'Indie Flower', cursive;*/
+    
+    .Navbar-Login {
+        height: 10%;
+    }

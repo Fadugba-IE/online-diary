@@ -4,7 +4,6 @@ import {Button} from 'react-bootstrap';
 import history from './history';
 
 
-
  class LoginForm extends Component {
         constructor(props){
             super(props);

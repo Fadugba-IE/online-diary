@@ -1,6 +1,13 @@
-import React from 'react'
+import React from 'react';
+import {Switch, Route} from 'react-router-dom';
+
+
 import LandingPage from './Pages/LandingPage';
-import Routes from './Components/Routes';
+import LoginPage from './Pages/LoginPage';
+import SignUpPage from './Pages/SignUpPage';
+//import history from './Components/history';
+
+//import Routes from './Components/Routes';
 
 
 
@@ -8,19 +15,19 @@ import Routes from './Components/Routes';
 
 
 
+function App () {
+        return( 
 
-function App() {
-    return ( 
 
-       <div>
-           <Routes />
-       </div>
-           
-     
-        
-        
+             <Switch>
+             <Route exact path="/"  component = {LandingPage} />
+             <Route   path= "/login" component = {LoginPage}  />
+             <Route   path="/signup"  component = {SignUpPage} />
+             </Switch>
+            
+        );
+    }
+      
 
-    );
-}
 
 export default App;

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import NavbarLogin from '../Components/NavbarLogin';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../App.css';
 import LoginForm from '../Components/LoginForm';
+import {withRouter} from 'react-router-dom';
 
-function LoginPage() {
+class LoginPage extends Component {
+    render(){
+
     return (
         <div className = 'form-page' >
                 <NavbarLogin />
@@ -16,7 +19,7 @@ function LoginPage() {
 
                   <div>
                 <LoginForm />
-                <p> Do not have an account? <a>Sign Up</a></p>
+                
                   </div>
 
 
@@ -29,6 +32,8 @@ function LoginPage() {
             
         </div>
     )
+
+    }
 }
 
-export default LoginPage
+export default withRouter (LoginPage);

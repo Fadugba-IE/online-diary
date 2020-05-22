@@ -3,6 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import NavBar from '../Components/NavBar';
 import '../App.css';
 import Buttons from '../Components/Buttons';
+import {withRouter} from 'react-router-dom';
+
+
+
 
 
 
@@ -20,7 +24,7 @@ class LandingPage extends Component {
                       </div>
 
          <div>
-             <Buttons /> 
+             <Buttons />
             </div>
                         </Col>
                     </Row>
@@ -32,4 +36,7 @@ class LandingPage extends Component {
     }
 }
 
-export default LandingPage;
+export default withRouter(LandingPage);
+
+
+//  <Buttons />

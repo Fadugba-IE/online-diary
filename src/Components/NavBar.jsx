@@ -1,14 +1,14 @@
 import React  from 'react';
 import {Navbar, Button} from 'react-bootstrap';
 import '../App.css';
-import history from '../Components/history';
+import history from './history';
 
  function NavBar() {
     return (
       <div>
 <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#">
-      <img
+    <Navbar.Brand href=" ">
+    <img
         alt=""
         src="/logo.svg"
         width="30"
@@ -16,7 +16,7 @@ import history from '../Components/history';
         className="d-inline-block align-top"
       />{' '}
       Online Diary APP 
-      <Button className= 'header-login' variant="primary" onClick = {() => history.push('/login')}>LOG IN</Button> 
+      <Button className= 'header-login' variant="primary" onClick = {() => history.push("/login")}>LOG IN</Button> 
     </Navbar.Brand>
   </Navbar>
 </div>

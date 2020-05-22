@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {Component}from 'react';
 import NavbarLogin from '../Components/NavbarLogin';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../App.css';
 import SignUpForm from '../Components/SignUpForm';
 
-function SignUpPage() {
+class SignUpPage extends Component {
+    render(){
+
+    
     return (
         <div className = 'form-page' >
                 <NavbarLogin />
@@ -29,6 +32,8 @@ function SignUpPage() {
             
         </div>
     )
+
+}
 }
 
 export default SignUpPage;
