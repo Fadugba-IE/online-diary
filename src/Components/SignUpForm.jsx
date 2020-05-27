@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
+import {auth} from '../firebase/firebaseIndex';
+
 
 
 const initialState = {
@@ -10,9 +12,11 @@ const initialState = {
                 usernameError: '',
                 emailError: '',
                 passwordError: '',
-                confirmpasswordError: ''
+                confirmpasswordError: '',
+                error: null,
+                
 
-}
+};
 
 
 
@@ -79,32 +83,33 @@ const initialState = {
             }
             return true;
 
-
-
-            
-           
-
-         
+  
 
         };
 
 
-        handleSubmit(event){
+        handleSubmit = async event => {
             
             event.preventDefault();
             const isValid = this.validate();
             if(isValid){
                 console.log(this.state);
                 alert('Registration Successful');
-                this.setState(initialState);
-               
                 
+          }
 
+          try {
+              const { user } = await auth.createUserWithEmailAndPassword(event, this.state.email, this.state.password);
+                this.setState (initialState);
+          }
 
-            }
+          catch(error){
+              console.error(error);
+          }
             
-            }
+            };
 
+            
 
     render() {
         return (

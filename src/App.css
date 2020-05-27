@@ -1,6 +1,7 @@
     .Landing-page {
         background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
         background-size: cover;
+        position: static;
     }
     
     .banner-text h1 {
@@ -68,16 +69,17 @@
     
     .Login-form {
         background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+        background-size: cover;
         width: 100vw;
-        height: 97vh;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: 100%;
         position: relative;
-        margin-top: 23%;
+        margin-left: -15px;
+        /*margin-top: 23%;
         position: absolute;
-        top: 50%;
+        /* top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
         text-align: center;
     }
     
@@ -102,8 +104,8 @@
         letter-spacing: 5px;
         color: ivory;
         text-align: center;
-        margin-top: 10%;
         margin-bottom: 5%;
+        padding-top: 5%;
     }
     
     .Login-form ::placeholder {
@@ -152,17 +154,30 @@
     }
     
     .SignUp-form {
-        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+        /* background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
         width: 100vw;
         height: 100vh;
         background-size: 100% 100%;
         background-repeat: no repeat;
-        margin-top: 23.5%;
+        margin-top: 23.7%;
         margin-bottom: 0%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;  */
+        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        background-size: 100%;
+        position: relative;
+        margin-left: -15px;
+        /*margin-top: 23%;
+        position: absolute;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
         text-align: center;
     }
     
@@ -250,4 +265,63 @@ font-family: 'Indie Flower', cursive;*/
     
     .Navbar-Login {
         height: 10%;
+    }
+    /*        MEDIA QUERIES       */
+    
+    @media only screen and (max-width: 1200px) {
+        .Landing-buttons {
+            margin-left: 17%;
+        }
+        .header-login {
+            display: none !important;
+        }
+        .Login-form {
+            margin-bottom: 0;
+            height: 100vh;
+        }
+        .Navbar-Login {
+            display: flex;
+        }
+    }
+    
+    @media only screen and (max-width:1023px) {
+        .Landing-buttons {
+            margin-left: 10%;
+        }
+        .header-login {
+            display: none !important;
+        }
+    }
+    
+    @media only screen and (max-width:767px) {
+        .Landing-page {
+            position: static;
+            height: 100vh;
+        }
+        .button {
+            margin-bottom: 25px;
+            margin-left: 8%;
+            width: 200px;
+            height: 60px;
+        }
+        .Landing-buttons {
+            display: inline !important;
+            align-content: center;
+        }
+        .banner-text h1 {
+            margin-top: 25%;
+        }
+    }
+    
+    @media only screen and (max-width:480px) {
+        .button {
+            margin-bottom: 25px;
+            margin-left: 2%;
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+        }
+        .banner-text h1 {
+            margin-top: 30%;
+        }
     }

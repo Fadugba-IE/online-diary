@@ -5,7 +5,7 @@ import '../App.css';
 
  function NavbarLogin() {
     return (
-      <div >
+      <div className = "NavbarLogin" >
 <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="/">
       Online Diary APP 
