@@ -1,7 +1,7 @@
 {
 
     "name": "diary-app",
-    "homepage": ".",
+    "homepage": "https://5ece83bb83e8e9906c122c8a--iyanu-diary-app.netlify.app",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
