@@ -12,8 +12,8 @@ const initialState = {
                 usernameError: '',
                 emailError: '',
                 passwordError: '',
-                confirmpasswordError: '',
-                error: null,
+                confirmpasswordError: ''
+                
                 
 
 };
@@ -88,24 +88,18 @@ const initialState = {
         };
 
 
-        handleSubmit = async event => {
+        handleSubmit(event) {
             
             event.preventDefault();
             const isValid = this.validate();
             if(isValid){
                 console.log(this.state);
                 alert('Registration Successful');
+                this.setState (initialState);
                 
           }
 
-          try {
-              const { user } = await auth.createUserWithEmailAndPassword(event, this.state.email, this.state.password);
-                this.setState (initialState);
-          }
-
-          catch(error){
-              console.error(error);
-          }
+       
             
             };
 
@@ -178,3 +172,16 @@ const initialState = {
 
 export default SignUpForm;
 
+
+/*
+error: null,
+
+ try {
+              const { user } = await auth.createUserWithEmailAndPassword(event, this.state.email, this.state.password);
+                
+          }
+
+          catch(error){
+              console.error(error);
+          }
+*/

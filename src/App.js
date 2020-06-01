@@ -19,22 +19,24 @@ import dashboard from './Pages/dashboard';
 
 
 function App () {
-    const user = null;
-        return( 
-            user ? 
-            <Route path = "/dashboard" component = {dashboard} />
-            :
 
-
+    return(
              <Switch>
              <Route exact path="/"  component = {LandingPage} />
              <Route   path= "/login" component = {LoginPage}  />
              <Route   path="/signup"  component = {SignUpPage} />
              </Switch>
+
+    );
             
-        );
+       
     }
       
 
 
 export default App;
+
+
+/*  const user = null;
+         
+            user ? */

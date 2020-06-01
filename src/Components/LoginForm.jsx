@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import {Button} from 'react-bootstrap';
 import history from './history';
-import {auth} from '../firebase/firebaseIndex';
+
 
 
  class LoginForm extends Component {
@@ -11,8 +11,7 @@ import {auth} from '../firebase/firebaseIndex';
 
             this.state = {
                 email : '',
-                password :  '',
-                error: null
+                password :  ''
             }
 
             this.handleChange = this.handleChange.bind(this);
@@ -28,21 +27,8 @@ import {auth} from '../firebase/firebaseIndex';
             
         }
 
-        handleSubmit = async event => {
+        handleSubmit (event) {
             alert('you have logged in successfully' + this.state.username);
-            
-
-            try {
-                const { user } = await auth.signInWithEmailAndPassword(event, this.state.email, this.state.password);
-            }
-  
-            catch(error){
-                console.error(error);
-            }
-              
-
-
-
             
         }
 
@@ -94,3 +80,21 @@ import {auth} from '../firebase/firebaseIndex';
 
 export default LoginForm;
 
+
+
+/* 
+
+import {auth} from '../firebase/firebaseIndex';
+,
+                error: null
+
+                try {
+                const { user } = await auth.signInWithEmailAndPassword(event, this.state.email, this.state.password);
+            }
+  
+            catch(error){
+                console.error(error);
+            }
+
+
+*/
