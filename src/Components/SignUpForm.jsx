@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {auth} from '../firebase/firebaseIndex';
 
 
 
