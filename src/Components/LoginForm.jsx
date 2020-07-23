@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import {Button} from 'react-bootstrap';
 import history from './history';
+import {auth} from '../firebase/firebaseIndex';
 
 
 
@@ -15,7 +16,8 @@ import history from './history';
             }
 
             this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        //this.handleSubmit = this.handleSubmit.bind(this);
+        this.login = this.login.bind(this);
 
         };
 
@@ -27,8 +29,16 @@ import history from './history';
             
         }
 
-        handleSubmit (event) {
-            alert('you have logged in successfully' + this.state.username);
+        login (event) {
+                event.preventDefault();
+            auth.signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+                console.log(u)
+                 history.push('/dashboard');
+            }).catch((err) =>{
+                alert ('Incorrecct Credentials. Please try again')
+                console.log(err)
+            })
+           
             
         }
 
@@ -40,7 +50,8 @@ import history from './history';
 
                 <h2>LOG IN</h2>
 
-                <form  onSubmit = {this.handleSubmit}>
+                <form >  
+                     
 
 
                 
@@ -65,7 +76,7 @@ import history from './history';
 
 
                 
-                <input type = "submit" value = "Login" />
+                <input onClick = {this.login}   type = "submit" value = "Login" />
                 </form>
 
                 <p> Do not have an account? <Button className='button-form' variant="Primary" size="lg" onClick = {() => history.push('/signup')}>SIGN UP</Button> </p>
@@ -97,4 +108,6 @@ import {auth} from '../firebase/firebaseIndex';
             }
 
 
-*/
+
+
+onSubmit = {this.handleSubmit}  */

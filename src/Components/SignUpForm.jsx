@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
+import {auth} from '../firebase/firebaseIndex';
+import history from './history';
+
 
 
 
@@ -11,7 +14,8 @@ const initialState = {
                 usernameError: '',
                 emailError: '',
                 passwordError: '',
-                confirmpasswordError: ''
+                confirmpasswordError: '',
+               
                 
                 
 
@@ -31,10 +35,16 @@ const initialState = {
 
             this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+       // this.createUserWithEmailAndPasswordHandler = this.createUserWithEmailAndPasswordHandler.bind(this);
+      // this.signup = this.signup.bind(this);
 
         };
 
+    
         
+      /*  signup(event){
+            event.preventDefault();    
+        } */
         
 
         handleChange(event){
@@ -87,21 +97,27 @@ const initialState = {
         };
 
 
+
+
         handleSubmit(event) {
             
             event.preventDefault();
             const isValid = this.validate();
             if(isValid){
-                console.log(this.state);
-                alert('Registration Successful');
-                this.setState (initialState);
-                
-          }
-
-       
-            
+                console.log(this.state);       
+          }    
+          
+          auth.createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+            console.log(u)
+            alert('Registration Successful');
+            this.setState = initialState;
+            history.push('/login')
+        }).catch((err) =>{
+            console.log(err)
+        })
             };
 
+          
             
 
     render() {
@@ -154,7 +170,7 @@ const initialState = {
 
 
                 
-                <input type = "submit" value = "Sign Up" />
+                <input onClick = {this.signup} type = "submit" value = "Sign Up" />
 
                 </form>
 
@@ -184,3 +200,17 @@ error: null,
               console.error(error);
           }
 */
+
+
+/*createUserWithEmailAndPasswordHandler = async (event, email, password) =>{
+    event.preventDefault();
+    try{
+        const {user} = await auth.createUserWithEmailAndPassword(this.state.email, this.state.password);
+        generateUserDocument (user, {email}, {password});
+        
+    }
+        catch(error){
+            console.error('Error Signing up with email and password')
+    }
+    this.setState = initialState;
+}; */

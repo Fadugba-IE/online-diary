@@ -1,353 +1,425 @@
-        .Landing-page {
-            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
-            background-size: cover;
-            position: static;
-        }
-        
-        .banner-text h1 {
-            font-family: 'Roboto Mono', monospace;
-            margin-top: 15%;
-            font-size: 45px;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-        }
-        
-        .banner-text p {
-            font-family: 'IM Fell French Canon SC', serif;
-            margin-top: auto;
-            color: white;
-            font-size: 20px;
-            padding: 2em;
-            text-align: center;
-        }
-        /*.header-style {
+            .Landing-page {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+                background-size: cover;
+                position: static;
+            }
+            
+            .banner-text h1 {
+                font-family: 'Roboto Mono', monospace;
+                margin-top: 15%;
+                font-size: 45px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            }
+            
+            .banner-text p {
+                font-family: 'IM Fell French Canon SC', serif;
+                margin-top: auto;
+                color: white;
+                font-size: 20px;
+                padding: 2em;
+                text-align: center;
+            }
+            /*.header-style {
         background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
         height: 20px;
         overflow: auto;
         position: fixed;
     }
     */
-        
-        .button {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
-            font-family: 'Roboto Mono', monospace;
-            color: whitesmoke;
-            width: 300px;
-            height: 80px;
-            margin-left: 55px;
-            border-radius: 3rem !important;
-            cursor: pointer;
-        }
-        
-        .button:hover {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #d4deec, #c0d4ee);
-        }
-        
-        .Landing-buttons {
-            display: inline-block;
-            text-align: center;
-            margin-left: 25%;
-            margin-bottom: 20%;
-            margin-top: 40px;
-        }
-        
-        .header-login {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
-            font-family: 'Roboto Mono', monospace;
-            color: #ffffff;
-            width: 150px;
-            height: 50px;
-            border-radius: 2rem !important;
-            margin-left: 350%;
-            cursor: pointer;
-        }
-        
-        .header-login:hover {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #d4deec, #c0d4ee);
-        }
-        
-        .Login-form {
-            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
-            background-size: cover;
-            width: 100vw;
-            height: 100vh;
-            background-size: 100%;
-            position: relative;
-            margin-left: -15px;
-            /*margin-top: 23%;
-        position: absolute;
-        /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-            text-align: center;
-        }
-        
-        .Login-form input[type="email"],
-        .Login-form input[type="password"] {
-            border: 0;
-            background: none;
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            border: 2px solid #516c94;
-            padding: 14px 10px;
-            width: 250px;
-            outline: none;
-            color: white;
-            border-radius: 30px;
-            transition: 0.25s;
-        }
-        
-        .Login-form h2 {
-            font-family: 'IM Fell French Canon SC', serif;
-            letter-spacing: 5px;
-            color: ivory;
-            text-align: center;
-            margin-bottom: 5%;
-            padding-top: 5%;
-        }
-        
-        .Login-form ::placeholder {
-            font-family: 'Indie Flower', cursive;
-            font-size: 20px;
-            font-weight: lighter;
-            color: ivory;
-            margin: auto;
-        }
-        
-        .Login-form input[type="submit"] {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
-            font-family: 'Roboto Mono', monospace;
-            color: whitesmoke;
-            font-size: 20px;
-            margin: 20px auto;
-            border: 2px solid #516c94;
-            width: 170px;
-            height: 50px;
-            text-align: center;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-        
-        .Login-form p {
-            font-family: 'Indie Flower', cursive;
-            margin-top: auto;
-            color: white;
-            font-size: 20px;
-            padding: 2em;
-            text-align: center;
-        }
-        
-        .Login-form p button {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
-            font-family: 'IM Fell French Canon SC', serif;
-            color: whitesmoke;
-            font-size: 10px;
-            margin: 20px auto;
-            width: 120px;
-            height: 40px;
-            text-align: center;
-            border-radius: 20px;
-            cursor: pointer;
-            display: block;
-        }
-        
-        .SignUp-form {
-            /* background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
-        width: 100vw;
-        height: 100vh;
-        background-size: 100% 100%;
-        background-repeat: no repeat;
-        margin-top: 23.7%;
-        margin-bottom: 0%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;  */
-            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
-            background-size: cover;
-            width: 100vw;
-            height: 100vh;
-            background-size: 100%;
-            position: relative;
-            margin-left: -15px;
-            /*margin-top: 23%;
-        position: absolute;
-        /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-            text-align: center;
-        }
-        
-        .SignUp-form h2 {
-            font-family: 'IM Fell French Canon SC', serif;
-            letter-spacing: 5px;
-            color: ivory;
-            text-align: center;
-            padding-top: 3%;
-            margin-bottom: 3%;
-        }
-        
-        .SignUp-form input[name="email"],
-        .SignUp-form input[type="password"],
-        .SignUp-form input[name="username"],
-        .SignUp-form input[type="confirmpassword"] {
-            background-color: whitesmoke;
-            color: black;
-            font-weight: normal;
-            font-size: 20px;
-            display: block;
-            margin: 12px auto;
-            text-align: center;
-            border: 2px solid #516c94;
-            padding: 14px 10px;
-            width: 300px;
-            outline: none;
-            border-radius: 30px;
-            transition: 0.25s;
-            text-align: center;
-        }
-        
-        .SignUp-form input[type="submit"] {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
-            font-family: 'Roboto Mono', monospace;
-            color: whitesmoke;
-            font-size: 20px;
-            margin: 15px auto;
-            border: 2px solid #516c94;
-            width: 170px;
-            height: 50px;
-            text-align: center;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-        
-        .SignUp-form p {
-            font-family: 'IM Fell French Canon SC', serif;
-            margin-top: auto;
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            padding: auto;
-        }
-        
-        .SignUp-form p button {
-            background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
-            font-family: 'IM Fell French Canon SC', serif;
-            color: whitesmoke;
-            font-size: 10px;
-            margin: 20px auto;
-            width: 120px;
-            height: 40px;
-            text-align: center;
-            border-radius: 20px;
-            cursor: pointer;
-            display: block;
-        }
-        
-        .SignUp-form label {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 20px;
-            color: ivory;
-            margin: auto;
-        }
-        
-        .Error-message {
-            margin: 0, auto;
-            color: red;
-            font-size: 15px;
-        }
-        /* font-family: 'Roboto Mono', monospace;
-font-family: 'IM Fell French Canon SC', serif;
-font-family: 'Indie Flower', cursive;*/
-        
-        .Navbar-Login {
-            height: 10%;
-        }
-        /*        MEDIA QUERIES       */
-        
-        @media only screen and (max-width: 1200px) {
-            .Landing-buttons {
-                margin-left: 17%;
-            }
-            .header-login {
-                display: none !important;
-            }
-            .Login-form {
-                margin-bottom: 0;
-                height: 100vh;
-            }
-            .Navbar-Login {
-                display: flex;
-            }
-        }
-        
-        @media only screen and (max-width:1023px) {
-            .Landing-buttons {
-                margin-left: 10%;
-            }
-            .header-login {
-                display: none !important;
-            }
-        }
-        
-        @media only screen and (max-width:767px) {
-            .Landing-page {
-                position: static;
-                height: 100vh;
-            }
+            
             .button {
-                margin-bottom: 25px;
-                margin-left: 8%;
-                width: 200px;
-                height: 60px;
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'Roboto Mono', monospace;
+                color: whitesmoke;
+                width: 300px;
+                height: 80px;
+                margin-left: 55px;
+                border-radius: 3rem !important;
+                cursor: pointer;
             }
+            
+            .button:hover {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #d4deec, #c0d4ee);
+            }
+            
             .Landing-buttons {
-                display: inline !important;
-                align-content: center;
+                display: inline-block;
+                text-align: center;
+                margin-left: 25%;
+                margin-bottom: 20%;
+                margin-top: 40px;
             }
-            .banner-text h1 {
-                margin-top: 25%;
-            }
-        }
-        
-        @media only screen and (max-width:480px) {
-            .button {
-                margin-bottom: 25px;
-                margin-left: 2%;
+            
+            .header-login {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'Roboto Mono', monospace;
+                color: #ffffff;
                 width: 150px;
                 height: 50px;
-                font-size: 18px;
+                border-radius: 2rem !important;
+                margin-left: 350%;
+                cursor: pointer;
             }
-            .banner-text h1 {
-                margin-top: 30%;
+            
+            .header-login:hover {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #d4deec, #c0d4ee);
             }
+            
+            .Login-form {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+                background-size: cover;
+                width: 100vw;
+                height: 100vh;
+                background-size: 100%;
+                position: relative;
+                margin-left: -15px;
+                /*margin-top: 23%;
+        position: absolute;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+                text-align: center;
+            }
+            
+            .Login-form input[type="email"],
+            .Login-form input[type="password"] {
+                border: 0;
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border: 2px solid #516c94;
+                padding: 14px 10px;
+                width: 250px;
+                outline: none;
+                color: white;
+                border-radius: 30px;
+                transition: 0.25s;
+            }
+            
+            .Login-form h2 {
+                font-family: 'IM Fell French Canon SC', serif;
+                letter-spacing: 5px;
+                color: ivory;
+                text-align: center;
+                margin-bottom: 5%;
+                padding-top: 5%;
+            }
+            
+            .Login-form ::placeholder {
+                font-family: 'Indie Flower', cursive;
+                font-size: 20px;
+                font-weight: lighter;
+                color: ivory;
+                margin: auto;
+            }
+            
+            .Login-form input[type="submit"] {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'Roboto Mono', monospace;
+                color: whitesmoke;
+                font-size: 20px;
+                margin: 20px auto;
+                border: 2px solid #516c94;
+                width: 170px;
+                height: 50px;
+                text-align: center;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+            
+            .Login-form p {
+                font-family: 'Indie Flower', cursive;
+                margin-top: auto;
+                color: white;
+                font-size: 20px;
+                padding: 2em;
+                text-align: center;
+            }
+            
+            .Login-form p button {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'IM Fell French Canon SC', serif;
+                color: whitesmoke;
+                font-size: 10px;
+                margin: 20px auto;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                border-radius: 20px;
+                cursor: pointer;
+                display: block;
+            }
+            
+            .SignUp-form {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+                background-size: cover;
+                width: 100vw;
+                height: 100vh;
+                background-size: 100%;
+                position: relative;
+                margin-left: -15px;
+                text-align: center;
+            }
+            
+            .SignUp-form h2 {
+                font-family: 'IM Fell French Canon SC', serif;
+                letter-spacing: 5px;
+                color: ivory;
+                text-align: center;
+                padding-top: 3%;
+                margin-bottom: 3%;
+            }
+            
             .SignUp-form input[name="email"],
             .SignUp-form input[type="password"],
             .SignUp-form input[name="username"],
             .SignUp-form input[type="confirmpassword"] {
-                width: 250px;
+                background-color: whitesmoke;
+                color: black;
+                font-weight: normal;
+                font-size: 20px;
+                display: block;
+                margin: 12px auto;
+                text-align: center;
+                border: 2px solid #516c94;
+                padding: 14px 10px;
+                width: 300px;
+                outline: none;
+                border-radius: 30px;
+                transition: 0.25s;
+                text-align: center;
             }
-            .SignUp-form h2 {
-                margin-bottom: 20px;
-                padding-top: 30px;
-            }
-        }
-        
-        @media only screen and (max-width:379px) {
-            .button {
-                margin-left: 3%;
-                margin-right: 8%;
-                width: 150px;
+            
+            .SignUp-form input[type="submit"] {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'Roboto Mono', monospace;
+                color: whitesmoke;
+                font-size: 20px;
+                margin: 15px auto;
+                border: 2px solid #516c94;
+                width: 170px;
                 height: 50px;
+                text-align: center;
+                border-radius: 30px;
+                cursor: pointer;
             }
-            .Landing-buttons {
-                display: block !important;
-                align-content: center;
+            
+            .SignUp-form p {
+                font-family: 'IM Fell French Canon SC', serif;
+                margin-top: auto;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                padding: auto;
             }
-            .banner-text h1 {
-                margin-top: 15%;
+            
+            .SignUp-form p button {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'IM Fell French Canon SC', serif;
+                color: whitesmoke;
+                font-size: 10px;
+                margin: 20px auto;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                border-radius: 20px;
+                cursor: pointer;
+                display: block;
             }
-        }
+            
+            .SignUp-form label {
+                font-family: 'Roboto Mono', monospace;
+                font-size: 20px;
+                color: ivory;
+                margin: auto;
+            }
+            
+            .Error-message {
+                margin: 0, auto;
+                color: red;
+                font-size: 15px;
+            }
+            
+            .dashboard-page {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('./images/background.jpeg');
+                background-size: cover;
+                position: static;
+            }
+            
+            .dashboard-header {
+                background: linear-gradient(to left bottom, #0b1f39, #0b1f39, #0b1f39, #0b1f39, #0b1f39);
+            }
+            
+            .mdl-layout__drawer.dashboard-drawer.is-visible {
+                background: linear-gradient(to left bottom, #0b1f39, #0b1f39, #0b1f39, #0b1f39, #0b1f39);
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            }
+            
+            .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+                padding: 16px 16px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: cursive;
+            }
+            
+            .Navbar-Login {
+                height: 10%;
+            }
+            
+            .dashboard-form h2 {
+                font-family: 'IM Fell French Canon SC', serif;
+                letter-spacing: 5px;
+                color: ivory;
+                text-align: center;
+                padding-top: 3%;
+                margin-bottom: 3%;
+            }
+            
+            .dateField {
+                background-color: whitesmoke;
+                color: black;
+                font-weight: normal;
+                font-size: 20px;
+                display: block;
+                text-align: center;
+                margin: 12px auto;
+                margin-left: 250%;
+                border: 2px solid #516c94;
+                padding: 14px 10px;
+                width: 150%;
+                border-radius: 10px;
+                transition: 0.25s;
+                outline: none;
+            }
+            
+            .dashboard-form input[name="memoryInput"] {
+                background-color: whitesmoke;
+                color: black;
+                font-weight: normal;
+                font-size: 20px;
+                display: block;
+                margin: 12px auto;
+                text-align: center;
+                border: 2px solid #516c94;
+                padding: 14px 10px;
+                width: 40%;
+                outline: none;
+                border-radius: 10px;
+                transition: 0.25s;
+                text-align: center;
+            }
+            
+            .dashboard-form input[type="submit"] {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'Roboto Mono', monospace;
+                color: whitesmoke;
+                font-size: 20px;
+                margin: 50px auto;
+                display: block;
+                border: 2px solid #516c94;
+                width: 170px;
+                height: 50px;
+                text-align: center;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+            
+            .dashboard-form label {
+                font-family: 'Roboto Mono', monospace;
+                font-size: 30px;
+                color: ivory;
+                margin: auto;
+                display: block;
+                margin: 12px auto;
+                text-align: center;
+            }
+            /*        MEDIA QUERIES       */
+            
+            @media only screen and (max-width: 1200px) {
+                .Landing-buttons {
+                    margin-left: 17%;
+                }
+                .header-login {
+                    display: none !important;
+                }
+                .Login-form {
+                    margin-bottom: 0;
+                    height: 100vh;
+                }
+                .Navbar-Login {
+                    display: flex;
+                }
+            }
+            
+            @media only screen and (max-width:1023px) {
+                .Landing-buttons {
+                    margin-left: 10%;
+                }
+                .header-login {
+                    display: none !important;
+                }
+            }
+            
+            @media only screen and (max-width:767px) {
+                .Landing-page {
+                    position: static;
+                    height: 100vh;
+                }
+                .button {
+                    margin-bottom: 25px;
+                    margin-left: 8%;
+                    width: 200px;
+                    height: 60px;
+                }
+                .Landing-buttons {
+                    display: inline !important;
+                    align-content: center;
+                }
+                .banner-text h1 {
+                    margin-top: 25%;
+                }
+            }
+            
+            @media only screen and (max-width:480px) {
+                .button {
+                    margin-bottom: 25px;
+                    margin-left: 2%;
+                    width: 150px;
+                    height: 50px;
+                    font-size: 18px;
+                }
+                .banner-text h1 {
+                    margin-top: 30%;
+                }
+                .SignUp-form input[name="email"],
+                .SignUp-form input[type="password"],
+                .SignUp-form input[name="username"],
+                .SignUp-form input[type="confirmpassword"] {
+                    width: 250px;
+                }
+                .SignUp-form h2 {
+                    margin-bottom: 20px;
+                    padding-top: 30px;
+                }
+            }
+            
+            @media only screen and (max-width:379px) {
+                .button {
+                    margin-left: 3%;
+                    margin-right: 8%;
+                    width: 150px;
+                    height: 50px;
+                }
+                .Landing-buttons {
+                    display: block !important;
+                    align-content: center;
+                }
+                .banner-text h1 {
+                    margin-top: 15%;
+                }
+            }

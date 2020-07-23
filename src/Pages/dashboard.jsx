@@ -1,14 +1,37 @@
 import React, { Component } from 'react';
+import {Layout,Header,Navigation,Drawer,Content} from 'react-mdl';
+import {Link} from 'react-router-dom';
+import '../App.css';
+import DashboardForm from '../Components/DashboardForm';
 
 
-export class dashboard extends Component {
+
+export class Dashboard extends Component {
     render() {
         return (
-            <div>
-                Dashboard
-            </div>
+            <div className="demo-big-content"> 
+            <Layout className = "dashboard-page"> 
+                
+            <Header className = 'dashboard-header' title = ' Dashboard'  scroll >
+            <Navigation>
+            </Navigation>
+        </Header>
+              
+                <Drawer className = 'dashboard-drawer' >
+                    <Navigation >
+                        <Link to="#">create a memory</Link>
+                        <Link to="#">Memories</Link>
+                    </Navigation>
+                </Drawer>
+                <Content>
+                  <div className="page-content" />
+                  <DashboardForm/>
+                </Content>
+            </Layout>
+           
+           </div>
         )
     }
 }
 
-export default dashboard;
+export default Dashboard;

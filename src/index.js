@@ -6,6 +6,10 @@ import * as serviceWorker from './serviceWorker';
 import {Router} from 'react-router-dom';
 import history from './Components/history';
 
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
+
+
 
 
 
@@ -16,10 +20,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   
- <Router  history= {history}>
+ 
+   <Router  history= {history}>
      <App /> 
-    
      </Router>
+   
+    
+   
      
   ,
   document.getElementById('root')
