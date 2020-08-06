@@ -297,21 +297,23 @@
                 outline: none;
             }
             
-            .dashboard-form input[name="memoryInput"] {
-                background-color: whitesmoke;
-                color: black;
-                font-weight: normal;
-                font-size: 20px;
+            .dashboard-form textarea {
+                margin: 50px auto;
                 display: block;
-                margin: 12px auto;
-                text-align: center;
+                width: 60%;
+                height: 250px;
+                box-sizing: border-box;
                 border: 2px solid #516c94;
-                padding: 14px 10px;
-                width: 40%;
-                outline: none;
-                border-radius: 10px;
-                transition: 0.25s;
                 text-align: center;
+                border-radius: 10px;
+                resize: both;
+            }
+            
+            textarea ::placeholder {
+                font-family: 'Indie Flower', cursive;
+                font-size: 1.5rem;
+                font-weight: lighter;
+                color: #516c94;
             }
             
             .dashboard-form input[type="submit"] {
@@ -329,7 +331,21 @@
                 cursor: pointer;
             }
             
-            .dashboard-form label {
+            .dashboard-button {
+                background-image: linear-gradient(to left bottom, #0b1f39, #2e4465, #516c94, #7698c6, #9dc6fb);
+                font-family: 'Roboto Mono', monospace;
+                color: whitesmoke !important;
+                font-size: 20px;
+                margin: 10px 85%;
+                margin-bottom: 30px;
+                border: 2px solid #516c94;
+                width: 200px;
+                height: 50px;
+                text-align: center;
+                border-radius: 50px !important;
+                cursor: pointer;
+            }
+            /* .dashboard-form label {
                 font-family: 'Roboto Mono', monospace;
                 font-size: 30px;
                 color: ivory;
@@ -354,14 +370,24 @@
                 .Navbar-Login {
                     display: flex;
                 }
+                .dateField {
+                    margin-left: 155%;
+                }
             }
             
-            @media only screen and (max-width:1023px) {
+            @media only screen and (max-width:1024px) {
                 .Landing-buttons {
                     margin-left: 10%;
                 }
                 .header-login {
                     display: none !important;
+                }
+                .dateField {
+                    margin-left: 135%;
+                }
+                .dashboard-button {
+                    font-size: 1.8rem;
+                    margin-left: 410px;
                 }
             }
             
@@ -382,6 +408,13 @@
                 }
                 .banner-text h1 {
                     margin-top: 25%;
+                }
+                .dateField {
+                    margin-left: 80%;
+                }
+                .dashboard-button {
+                    font-size: 1.8rem;
+                    margin-left: 270px;
                 }
             }
             
@@ -406,6 +439,18 @@
                     margin-bottom: 20px;
                     padding-top: 30px;
                 }
+                .dateField {
+                    font-size: 15px;
+                    margin-left: 50%;
+                }
+                .dashboard-form h2 {
+                    font-size: 1.6rem;
+                    margin-top: 10px;
+                }
+                .dashboard-button {
+                    font-size: 1.8rem;
+                    margin-left: 125px;
+                }
             }
             
             @media only screen and (max-width:379px) {
@@ -421,5 +466,22 @@
                 }
                 .banner-text h1 {
                     margin-top: 15%;
+                }
+                .dateField {
+                    font-size: 10px;
+                    margin-left: 48%;
+                }
+                .dashboard-form h2 {
+                    font-size: 1.6rem;
+                    margin-top: 10px;
+                }
+                .dashboard-form label {
+                    font-size: 1.6rem;
+                    margin-top: 10%;
+                    margin-bottom: auto;
+                }
+                .dashboard-button {
+                    font-size: 1.8rem;
+                    margin-left: 75px;
                 }
             }
