@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../App.css";
@@ -11,14 +11,23 @@ function DashboardForm () {
     const [memoryDate, setMemoryDate] = useState(new Date());
     const [memoryInput, setMemoryInput] = useState('');
 
+    const memoryData = [memoryDate, memoryInput]
+
+  
+
 
     const handleDateChange = date => setMemoryDate (date);
     const handleMemoryChange = (e) => { setMemoryInput (e.target.value)  };
 
+    useEffect(()=> {
+        localStorage.setItem('storageData', memoryData );
+    }, [memoryData]);
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log (memoryDate, memoryInput);
+        console.log (memoryData);
+       
     }
 
     
