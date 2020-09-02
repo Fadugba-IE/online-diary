@@ -6,7 +6,7 @@ import {Switch, Route} from 'react-router-dom';
 import LandingPage from './Pages/LandingPage';
 import LoginPage from './Pages/LoginPage';
 import SignUpPage from './Pages/SignUpPage';
-import Dashboard from './Pages/Dashboard';
+import Dashboard from './Components/Dashboard';
 
 import { auth } from './firebase/firebaseIndex';
 //import {UserContext} from './providers/UserProvider'
