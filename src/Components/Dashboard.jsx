@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Layout,Header,Navigation,Drawer,Content} from 'react-mdl';
 import {Link} from 'react-router-dom';
 import '../App.css';
-import DashboardForm from '../Components/DashboardForm';
+import DashboardForm from './DashboardForm';
 
 
 

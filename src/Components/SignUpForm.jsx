@@ -104,17 +104,19 @@ const initialState = {
             event.preventDefault();
             const isValid = this.validate();
             if(isValid){
-                console.log(this.state);       
-          }    
-          
-          auth.createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+                console.log(this.state); 
+
+                   auth.createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
             console.log(u)
             alert('Registration Successful');
             this.setState = initialState;
             history.push('/login')
         }).catch((err) =>{
-            console.log(err)
-        })
+            console.log('please input correct credentials')
+        })      
+          }    
+          
+       
             };
 
           
